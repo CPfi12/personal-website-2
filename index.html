@@ -12,12 +12,15 @@
 	<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#"><span>Claire Pfister</span></a>
+      <a class="navbar-brand" href="#"><span>Claire Pfister</span><span class='secret-email'>clairepfis@gmail.com</span></a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#"><span class ='sub'>Who I Am</span></a></li>
-      <li><a href="#"><span class ='sub'>Skills</span></a></li>
-      <li><a href="#"><span class ='sub'>Projects</span></a></li>
+      <li ><a href="#me"><span class ='sub navlink'>Who I Am</span></a></li>
+      <li class='navlink'><a href="#skills"><span class ='sub navlink'>Skills</span></a></li>
+      <li class='navlink'><a href="#projects"><span class ='sub navlink'>Projects</span></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+                <li class='navlink'><a href="mailto:clairepfis@gmail.com"><span class='sub navlink'>clairepfis@gmail.com</span></a></li>
     </ul>
   </div>
 </nav>
@@ -31,24 +34,24 @@
     	<h2>Software Engineer focusing in the intersection between Information Science and Behavioral Science.</h2>
     	<br/>
     </div>
-    <div class='col-xs-3'>
+    <div class='col-xs-3' id='me'>
     </div>
     </div>
     <div class="row">
     <div class='left-text'>
 	<h2 class="sub-header">Who I Am</h2>
-	<p class="imp"> I am a Senior Teaching Fellow at the Grace Hopper Program at Fullstack Academy who is passionate about the ways that tech can increase accessibility to quality mental healthcare and decrease isolation of those struggling with mental illness.</p>
-	<p> Before Grace Hopper, I graduated Summa Cum Laude, Phi Beta Kappa from Dartmouth College with a BA in Chinese having completed all pre-medical coursework. After taking the MCAT and scoring in the 100th percentile, I was planning on applying to medical school with the hopes of becoming a Psychiatrist. I have always been passionate about mental health and felt that becoming a physician would allow me to help. However, after a couple of those closest to me struggled with mental health issues over the past year, it became clear that the traditional medical system was not effectively preventing or helping to alleviate mental health suffering due to stigma and lack of access. I am fascinated by the way that technology can make mental healthcare more accessible, and therefore more effective. Sth about creative and analytical?? </p>
+	<p class="imp bigp"> I am a Senior Teaching Fellow at the Grace Hopper Program at Fullstack Academy who is passionate about the ways that tech can increase accessibility to quality mental healthcare and decrease isolation of those struggling with mental illness.</p>
+	<p class='bigp'> Before Grace Hopper, I graduated from Dartmouth College with a BA in Chinese having completed all pre-medical coursework. After taking the MCAT and scoring in the 100th percentile, I was planning on applying to medical school with the hopes of becoming a Psychiatrist. I have always been passionate about mental health and felt that becoming a physician would allow me to help. However, after a couple of those closest to me struggled with mental health issues over the past year, it became clear that the traditional medical system was not effectively preventing or helping to alleviate mental health suffering due to stigma and lack of access. I am fascinated by the way that technology can make mental healthcare more accessible, and therefore more effective. Sth about creative and analytical?? </p>
 	</div>
 	<div class='right-photo'>
-		<img src="/Users/clairepfister/Documents/me.png">
+		<img class='right-photo phot' src="/Users/clairepfister/Documents/me.png">
 	</div>
 	</div>
 	
-    <div class="even">
+    <div class="even" id='skills'>
 
-		<h2 class="sub-header2">Skills</h2>
-		<div class="row">
+		<h2 class="sub-header2 center">Skills</h2>
+		<div class="row add-bottom">
 		<div class='col-xs-3'>
 		<p class='lihead imp'>Frontend</p>
 		<ul>
@@ -100,11 +103,12 @@
 		</div>
 		</div>
 	</div>
-	<div class='row head'>
-		<h1 class='project-header'>Projects</h1>
+	<div class='row head' id='projects'>
+		<!--<h1 class='project-header'>Projects</h1>-->
+		<h1> Projects</h1>
 	</div>
-	<div class='row first-proj'>	
-		<div class='col-xs-7'>
+	<div class='row sana'>	
+		<div class='left-projtext bigp'>
 			<h2 class="sub-header">Sana</h2>
 		    <h2 class="sub-header time">August 2017 - Present</h2>
 		    <p> <span class='darker'>Inspired by my experiences as a peer counselor and built from scratch,</span> Sana is a web application that uses Natural Language Processing to match peer counselors and students based on similar background and allows them to chat anonymously in an effort to increase accessibility for those who need help.</p>
@@ -118,23 +122,22 @@
 		    <span class="tech">Sequelize</span>
 		    <br/>
 		    <br/>
-		    <span class="tech code"> Code </span>
+		    <span class="tech code"><a class='codelink' href='https://github.com/CPfi12/sana' target='_blank'> Code</a> </span>
 		    <br/>
 		    <br/>
 		    </div>
-		</div>
-		<div class='col-xs-5'>
-			<img class= "proj-im" src='/Users/clairepfister/Documents/sana.png'>	
 
 		</div>
+			<img class= "right-proj sana-proj" src='/Users/clairepfister/Documents/sana.png'>	
+
 		
 
 	</div>
 	<div class='row even'>
-		<div class='col-xs-5'>
-			<img class= "proj-im" src='/Users/clairepfister/Documents/sana.png'>	
-		</div>
-		<div class='col-xs-7'>
+
+			<img class= "left-proj" src='/Users/clairepfister/Documents/mercury.png'>	
+
+		<div class='right-text bigp'>
 			<h2 class="sub-header project-header">Mercury</h2>
 		    <h2 class="sub-header time">June - July 2017</h2>
 		    <p> <span class='darker'>Built as the capstone project for the Grace Hopper Program,</span> Mercury is a web application that uses the Plaid API and nodemailer to motivate users to stick to multiple budhets and sub-budgets that the user creates.</p>
@@ -147,7 +150,7 @@
 		    <span class="tech">node-scheduler</span>
 		    <br/>
 		    <br/>
-		    <span class="tech code"> Code </span>
+		    <span class="tech code"><a class='codelink' href='https://github.com/colleenlavin/Mercury' target='_blank'>Code</a></span>
 		    <br/>
 		    <br/>
 		    </div>
@@ -155,7 +158,7 @@
 	</div>
 	<div class='row'>
 		
-		<div class='col-xs-7'>
+		<div class='left-projtext bigp'>
 			<h2 class="sub-header">TempTracker</h2>
 		    <h2 class="sub-header time">June 2017</h2>
 		    <p> <span class='darker'>Inspired by my experiences with pneumonia and created for Grace Hopper's Stackathon,</span> Temptracker is a web application that helps users track fever with graphs and metadata and notifies emergency contacts if temperature becomes too high.</p>
@@ -168,15 +171,13 @@
 		    <span class="tech">node-scheduler</span>
 		    <br/>
 		    <br/>
-		    <span class="tech code"> Code </span>
+		    <span class="tech code"><a class='codelink' href='https://github.com/CPfi12/Stackathon' target='_blank'>Code</a></span>
 		    <br/>
 		    <br/>
 		    </div>
 		</div>
-		<div class='col-xs-5'>
-			<img class= "proj-im" src='/Users/clairepfister/Documents/sana.png'>	
+			<img class= " right-proj proj-im" src='/Users/clairepfister/Documents/sana.png'>	
 
-		</div>
 		
 
 	</div>
@@ -184,11 +185,11 @@
 		
 
 	</div>
-	<div class='footer'>
+	<div class='footer row'>
 		<div class="icons">
-		<img class="bott" src="http://rundownapp.com/wp-content/uploads/2016/01/email-icon-transparent-background-png.png">
-		<img class="bott" src="https://image.flaticon.com/icons/svg/25/25231.svg">
-		<img class="bott" src="https://maxcdn.icons8.com/Share/icon/p1em/Logos//linkedin1600.png">
+		<a href='mailto:clairepfis@gmail.com' target='_blank'><img class="bott" src="http://rundownapp.com/wp-content/uploads/2016/01/email-icon-transparent-background-png.png"></a>
+		<a href='https://github.com/CPfi12' target='_blank'><img class="bott" src="https://image.flaticon.com/icons/svg/25/25231.svg"></a>
+		<a href='https://www.linkedin.com/in/claire-pfister-085238139/' target='_blank'><img class="bott" src="https://maxcdn.icons8.com/Share/icon/p1em/Logos//linkedin1600.png"></a>
 		</div>
 	</div>
 
