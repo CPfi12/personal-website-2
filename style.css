@@ -178,10 +178,10 @@ ul{
 .project{
 	height: 55vh;
 }
-.project-header{
-	padding-top:5vh;
-	padding-bottom:0vh;
-}
+/*.project-header{
+	margin-bottom:5vh;
+	padding-top:1vh;
+}*/
 .proj-im{
 	height: 50;
 	width: 50vmin;
@@ -191,7 +191,7 @@ ul{
 	display:block;
 }
 .left-text{
-	width: 65vw;
+	width: 60vw;
 	display:inline-block;
 }
 .left-projtext{
@@ -305,3 +305,22 @@ ul{
     	font-size: 2vmin;
     }
 }
+@media only screen and (min-width: 1200px) {
+	.right-photo{
+		width: 450px;
+		height:100%;
+	}
+	}
+@media only screen and (max-width: 1150px) {
+	.right-photo{
+		padding-top: 8vh;
+		
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.right-photo{
+		padding-top: 15vh;
+		
+	}
+}
+
